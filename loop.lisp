@@ -1,0 +1,11 @@
+(load "lib.lisp")
+(define loop
+  (lambda(x y)
+    (if (<= x y)
+        (begin (display x) 
+               (display " ") 
+               (set! x (+ x 1))
+               (loop x y)) )))
+;(trace 'loop)
+;(trace 'if)
+(loop 1 10)
