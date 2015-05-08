@@ -1,5 +1,5 @@
 ##########################################################################################
-# Project: Lisp++ 
+# Project: lisp--
 # # Makefile Evilbinary 小E
 # # Mail:rootntsd@gmail.com
 # ##########################################################################################
@@ -19,8 +19,8 @@ all:$(TARGET)
 
 run:$(TARGET) lib.lisp
 	./$(TARGET) --load lib.lisp
-test:$(TARGET) test.l
-	./$(TARGET) ./test.l
+test:$(TARGET) test.lisp
+	./$(TARGET) ./test.lisp
 clean:
 	rm -rf *.o $(TARGET) *.exe
 
